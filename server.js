@@ -3,6 +3,8 @@ const express = require("express");
 
 const app = express();
 
+console.log(new Date().toLocaleString());
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
